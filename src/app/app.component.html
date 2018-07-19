@@ -6,10 +6,12 @@
         [max]="100"
         [angleSpan]="240"
         [startAngle]="-120"
-[legend]="true"
+        [legend]="true"
         [legendTitle]="'Test'"
         [bigSegments]="10"
         [smallSegments]="5"
         [animations]="true"
         (select)="onSelect($event)">
 </ngx-charts-gauge>
+<p>{{mynumber | numberFrenchFormat}}</p>
+<p>test: {{t}}</p>

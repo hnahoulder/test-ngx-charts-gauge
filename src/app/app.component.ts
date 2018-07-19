@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DecimalPipe} from '@angular/common';
 
 
 import {single} from './data';
 
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
     view: any[] = [700, 400];
     data: any[];
+    mynumber = 11195575;
+    t = this.mynumber.toLocaleString();
 
     constructor() {
         this.data = single;
